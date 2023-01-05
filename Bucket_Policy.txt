@@ -1,0 +1,14 @@
+{
+      "Id":
+      "sid1",
+      "Version":
+      "2012-10-17",
+      "Statement": [{
+          "Sid": "Statelock",
+          "Action": ["s3:GetObject", 
+                     "s3:DeleteObject"],
+          "Effect": "Deny",
+          "Resource": ["arn:aws:s3:::terraform-sate-lock-rosh/*"],
+          "Principal": "*"
+      }]
+  }
